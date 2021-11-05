@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(OSISP4_TextSorter)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(OSISP4_TextSorter main.cpp synchronizedQueue/SynchronizedQueue.cpp synchronizedQueue/SynchronizedQueue.h queueTask/QueueTask.h queueTaskExcecutorService/QueueTaskExecutorService.cpp queueTaskExcecutorService/QueueTaskExecutorService.h threadPoolTaskService/ThreadPoolTaskService.cpp threadPoolTaskService/ThreadPoolTaskService.h)
